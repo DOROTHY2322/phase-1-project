@@ -14,7 +14,8 @@ body{
 
 h1 {
  font-family: 'MonteCarlo', cursive;
- color: black;
+color: #050302;
+text-align: center;
 }
 h2{
     text-align: center;
@@ -55,5 +56,5 @@ label{
 }
 .card{
     color: #ffffff;
-    margin-left: 350px;
+    margin-left: 320px;
 }
