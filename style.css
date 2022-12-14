@@ -18,6 +18,7 @@ h1 {
 }
 h2{
     text-align: center;
+    color: black;
 }
 h3{
     text-align: center;
@@ -39,4 +40,7 @@ h3{
 .search{
     text-align: center;
     color:#ffffff ;
+}
+label{
+    color: black;
 }
