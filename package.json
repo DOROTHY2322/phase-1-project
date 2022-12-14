@@ -1,0 +1,24 @@
+{
+  "name": "phase-1-project",
+  "version": "1.0.0",
+  "description": "cocktaildb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DOROTHY2322/phase-1-project.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JS"
+  ],
+  "author": "DOROTHY .J",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DOROTHY2322/phase-1-project/issues"
+  },
+  "homepage": "https://github.com/DOROTHY2322/phase-1-project#readme"
+}
