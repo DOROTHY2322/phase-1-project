@@ -4,11 +4,39 @@ body{
 }
 
 .navbar{
-    text-align: center;
+    background-color: #d2cfd0;
+    text-align: left;
     color: white;
-    
+    font-family: 'MonteCarlo', cursive;
+    height: 100px;
+    margin-left: 10px;
 }
 
 h1 {
  font-family: 'MonteCarlo', cursive;
+ color: black;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    color: black;
+}
+.container{
+    text-align: left;
+    background-color: #eeeefe;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 120;
+    left: 0;
+    padding-top: 60px;
+    float: left;
+    margin-left: 18px;
+    z-index: 5;
+}
+.search{
+    text-align: center;
+    color:#ffffff ;
 }
