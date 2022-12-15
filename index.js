@@ -43,25 +43,37 @@ document.addEventListener('DOMContentLoaded', () => {
     getRandomCocktail();
 
 function displayRandomCocktail(cocktail){
-    console.log(cocktail.drinks[0].strDrink)
+    console.log(cocktail.drinks[0])
+    
+    let drinks = document.querySelector('#drinks')
+
+    let drinkName = document.createElement('el')
+    drinkName.innerHTML=cocktail.drinks[0].strDrink
+
+    drinks.appendChild(drinkName);
+
+    let img =document.createElement('img');
+    img.src = cocktail.drinks[0].strDrinkThumb;
+
+    drinks.appendChild(img);
 
 }
-// Get the search button and checkbox elements
-const searchButton = document.getElementById("btn");
-const withAlcoholCheckbox = document.getElementById("with-alcohol");
-const withoutAlcoholCheckbox = document.getElementById("without-alcohol");
+// // Get the search button and checkbox elements
+// const searchButton = document.getElementById("btn");
+// const withAlcoholCheckbox = document.getElementById("with-alcohol");
+// const withoutAlcoholCheckbox = document.getElementById("without-alcohol");
 
-// Attach a click event listener to the "with alcohol" checkbox
-withAlcoholCheckbox.addEventListener("click", () => {
-  // If the "with alcohol" checkbox is selected, enable the search button
-  searchButton.disabled = false;
-});
+// // Attach a click event listener to the "with alcohol" checkbox
+// //withAlcoholCheckbox.addEventListener("click", () => {
+//   // If the "with alcohol" checkbox is selected, enable the search button
+//   searchButton.disabled = false;
+// });
 
-// Attach a click event listener to the "without alcohol" checkbox
-withoutAlcoholCheckbox.addEventListener("click", () => {
-  // If the "without alcohol" checkbox is selected, enable the search button
-  searchButton.disabled = false;
-});
+// // Attach a click event listener to the "without alcohol" checkbox
+// withoutAlcoholCheckbox.addEventListener("click", () => {
+//   // If the "without alcohol" checkbox is selected, enable the search button
+//   searchButton.disabled = false;
+// });
 
 
 })
