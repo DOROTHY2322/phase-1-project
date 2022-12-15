@@ -56,7 +56,23 @@ function displayRandomCocktail(cocktail){
     img.src = cocktail.drinks[0].strDrinkThumb;
 
     drinks.appendChild(img);
+     
+    for (let i=1; i=16;i++){
+       console.log();
+       
+       if(cocktail.drinks[0][`strIngredient${i}`]== null){
+        break;
+       }
 
+       let ingredient = document.createElement('li');
+       ingredient.innerHTML = cocktail.drinks[0] [`strMeasure${i}`]+ ':' +[`strIngredient${i}`] +
+       drinks.appendChild(ingredient);
+
+    }
+    let card = document.createElement('ons-card')
+    card.innerHTML = cocktail.drinks[0].strInstructions;
+    drinks.appendChild(card);
+ 
 }
 // // Get the search button and checkbox elements
 // const searchButton = document.getElementById("btn");
