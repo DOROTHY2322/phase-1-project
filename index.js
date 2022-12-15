@@ -47,7 +47,7 @@ function displayRandomCocktail(cocktail){
     
     let drinks = document.querySelector('#drinks')
 
-    let drinkName = document.createElement('el')
+    let drinkName = document.createElement('h2')
     drinkName.innerHTML=cocktail.drinks[0].strDrink
 
     drinks.appendChild(drinkName);
