@@ -1,18 +1,3 @@
-// hide the sign-up form by default
-
-// document.getElementById("signup-form").style.display = "none";
-
-// show the sign-up form when the user clicks on the "Sign Up" button
-
-// document.getElementById("signup-button").addEventListener("click", function() {
-  
-//   document.getElementById("signup-form").style.display = "block";
-// });
-
-// // hide the sign-up form when the user clicks on the "Close" button
-// document.getElementById("close-button").addEventListener("click", function() {
-//   document.getElementById("signup-form").style.display = "none";
-// });
 //URLS
 
 //random cocktails
@@ -57,19 +42,19 @@ function displayRandomCocktail(cocktail){
 
     drinks.appendChild(img);
      
-    for (let i=1; i=16;i++){
+    for (let i=1; i<16;i++){
        console.log();
        
        if(cocktail.drinks[0][`strIngredient${i}`]== null){
         break;
        }
 
-       let ingredient = document.createElement('li');
+       let ingredient = document.createElement('list-item');
        ingredient.innerHTML = cocktail.drinks[0] [`strMeasure${i}`]+ ':' +[`strIngredient${i}`] +
        drinks.appendChild(ingredient);
 
     }
-    let card = document.createElement('ons-card')
+    let card = document.createElement('card')
     card.innerHTML = cocktail.drinks[0].strInstructions;
     drinks.appendChild(card);
  
@@ -91,6 +76,20 @@ function displayRandomCocktail(cocktail){
 //   searchButton.disabled = false;
 // });
 
+// hide the sign-up form by default
 
+document.getElementById("signup-form").style.display = "none";
+
+ // show the sign-up form when the user clicks on the "Sign Up" button
+
+ document.getElementById("signup-button").addEventListener("click", function() {
+  
+   document.getElementById("signup-form").style.display = "block";
+ });
+
+// // hide the sign-up form when the user clicks on the "Close" button
+ //document.getElementById("close-button").addEventListener("click", function() {
+ // document.getElementById("signup-form").style.display = "none";
+//});
 })
  

@@ -13,11 +13,12 @@ body{
 }
 
 h1 {
- font-family: 'MonteCarlo', cursive;
+ font-family:'Times New Roman', Times, serif;
 color: #050302;
 text-align: center;
 }
 h2{
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
     color: black;
 }
@@ -86,4 +87,16 @@ label{
     display: block;
 
   }
-  
+   #drinks card{
+    font-size: large;
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    color: #050302;
+    
+  }
+  #drinks list-item{
+    font-size: medium;
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    color: #050302;
+  }
