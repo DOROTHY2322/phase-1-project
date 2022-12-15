@@ -1,5 +1,5 @@
 body{
-    background-image: url('https://raw.githubusercontent.com/DOROTHY2322/phase-1-project/main/gradient.png');
+    background-color: #AB9FAB;
     font-family: 'MonteCarlo', cursive;
 }
 
@@ -24,6 +24,12 @@ h2{
 h3{
     text-align: center;
     color: black;
+}
+h4{
+   font-family: 'Times New Roman', Times, serif;
+    padding: 1px;
+    text-align:right;
+    color: #050302;
 }
 .container{
     text-align: left;
@@ -58,3 +64,23 @@ label{
     color: #ffffff;
     margin-left: 320px;
 }
+/* #signup-form {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 5px;
+  } */
+
+  #drinks img{
+    width: 50%;
+    height: auto;
+    margin-left: 260px;
+    max-width: 800px;
+    max-width: 800px;
+    margin-top: 50px;
+
+  }
+  
