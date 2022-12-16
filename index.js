@@ -42,15 +42,15 @@ function displayRandomCocktail(cocktail){
 
     drinks.appendChild(img);
      
-    for (let i=1; i<16;i++){
-       console.log();
+    for (let i=1; i<16; i++){
+       console.log(i);
        
-       if(cocktail.drinks[0][`strIngredient${i}`]== null){
+     if(cocktail.drinks[0][`strIngredient${i}`]== null){
         break;
        }
 
        let ingredient = document.createElement('ons-list-item');
-       ingredient.innerHTML = cocktail.drinks[0] [`strMeasure${i}`]+ ':' +[`strIngredient${i}`] +
+       ingredient.innerHTML = cocktail.drinks[0] [`strIngredient${i}`] 
        drinks.appendChild(ingredient);
 
     }
@@ -59,22 +59,7 @@ function displayRandomCocktail(cocktail){
     drinks.appendChild(card);
  
 }
-// // Get the search button and checkbox elements
-// const searchButton = document.getElementById("btn");
-// const withAlcoholCheckbox = document.getElementById("with-alcohol");
-// const withoutAlcoholCheckbox = document.getElementById("without-alcohol");
 
-// // Attach a click event listener to the "with alcohol" checkbox
-// //withAlcoholCheckbox.addEventListener("click", () => {
-//   // If the "with alcohol" checkbox is selected, enable the search button
-//   searchButton.disabled = false;
-// });
-
-// // Attach a click event listener to the "without alcohol" checkbox
-// withoutAlcoholCheckbox.addEventListener("click", () => {
-//   // If the "without alcohol" checkbox is selected, enable the search button
-//   searchButton.disabled = false;
-// });
 
 // hide the sign-up form by default
 
@@ -88,8 +73,8 @@ document.getElementById("signup-form").style.display = "none";
  });
 
 // // hide the sign-up form when the user clicks on the "Close" button
- //document.getElementById("close-button").addEventListener("click", function() {
- // document.getElementById("signup-form").style.display = "none";
-//});
+ document.getElementById("close-button").addEventListener("click", function() {
+ document.getElementById("signup-form").style.display = "none";
+});
 })
  
