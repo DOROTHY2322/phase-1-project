@@ -81,7 +81,7 @@ function displayRandomCocktail(cocktail){
        drinks.appendChild(ingredient);
 
     }
-    let card = document.createElement('card')
+    let card = document.createElement('p')
     card.innerHTML = cocktail.drinks[0].strInstructions;
     drinks.appendChild(card);
  
