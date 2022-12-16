@@ -43,7 +43,7 @@
    - Email: dorothy.jebet@student.moringaschool.com 
 
    - when entered the page refreshes itself
-    -The project has one landing page.
+    - The project has one landing page.
 
 
 # Hosting on Github
