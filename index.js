@@ -93,47 +93,21 @@ function displayRandomCocktail(cocktail){
     drinks.appendChild(card);
  
 }
-// get the search form element
-const searchForm = document.getElementById("search-form");
-
-// add an event listener to the form that listens for the "submit" event
-
-searchForm.addEventListener("submit", function(event) {
-    // prevent the form from submitting
-    event.preventDefault();
+function performSearch(searchQuery) {
+    // implementation of the search function goes here
+    // (for example, you could send the search query to a server using an AJAX request)
+  }
   
-    // get the value of the search query from the input field
-    const searchQuery = document.getElementById("search-query").value;
+  document.getElementById("search-form").onsubmit = function(event) {
+    event.preventDefault(); // prevent the form from being submitted
   
-    // make a request to the API using the search query
-    fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${searchQuery}`)
-    .then((response)=>response.json())
-      .then((data) => {
-        // display the search results on the page
-        displayCocktails(data);
-      });
-  });
+    // get the search query from the input field
+    var searchQuery = document.getElementById("search-input").value;
   
-
-function displaySearchResults(results) {
-    const searchResultsElement = document.getElementById('search-results');
-
-  // clear the search results element
-  searchResultsElement.innerHTML = '';
-
-  // loop through the results and create an element for each result
-  results.forEach((result) => {
-    const resultElement = document.createElement('div');
-    resultElement.innerHTML = `
-      <h2>${result.strDrink}</h2>
-      <p>${result.strCategory}</p>
-      <img src="${result.strDrinkThumb}" alt="${result.strDrink}">
-    `;
-
-    // append the result element to the search results element
-    searchResultsElement.appendChild(resultElement);
-  });
-}
+    // perform the search using the searchQuery variable
+    performSearch(searchQuery);
+  }
+  
 
 
 
