@@ -43,14 +43,14 @@ function displayRandomCocktail(cocktail){
     drinks.appendChild(img);
      
     for (let i=1; i<16; i++){
-       console.log(i);
+       console.log();
        
      if(cocktail.drinks[0][`strIngredient${i}`]== null){
         break;
        }
 
        let ingredient = document.createElement('ons-list-item');
-       ingredient.innerHTML = cocktail.drinks[0] [`strIngredient${i}`] 
+       ingredient.innerHTML = cocktail.drinks[0] [`strMeasure${i}`] + ':' + cocktail.drinks[0] [`strIngredient${i}`]
        drinks.appendChild(ingredient);
 
     }
