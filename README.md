@@ -37,6 +37,15 @@
 - Take on the process in Alternative One above.
 - Repeat the steps in alternative one.
 
+# Project setup
+- This project requires you to have a dummy authentication, and in my case
+   - Name:DOROTHY
+   - Email: dorothy.jebet@student.moringaschool.com 
+
+   - when entered the page refreshes itself
+    -The project has one landing page.
+
+
 # Hosting on Github
  - After creting the project in which we have done so.
 
