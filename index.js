@@ -100,46 +100,47 @@ function displayRandomCocktail(cocktail){
     drinks.appendChild(card);
  
 }
-function performSearch(searchQuery) {
-    // implementation of the search function goes here
-    // (for example, you could send the search query to a server using an AJAX request)
-  }
+// function performSearch(searchQuery) {
+//     // implementation of the search function goes here
+//     // (for example, you could send the search query to a server using an AJAX request)
+//   }
+  let search = document.getElementById("submit");
+  let url = "https://thecocktaildb.com/api/json/v1/1/search.php?s=";
+  // document.getElementById("search-form").onsubmit = function(event) {
+  //   event.preventDefault(); // prevent the form from being submitted
   
-  document.getElementById("search-form").onsubmit = function(event) {
-    event.preventDefault(); // prevent the form from being submitted
+  //   // get the search query from the input field
+  //   var searchQuery = document.getElementById("search-input").value;
   
-    // get the search query from the input field
-    var searchQuery = document.getElementById("search-input").value;
+  //   // perform the search using the searchQuery variable
+  //   performSearch(searchQuery);
+  // }
   
-    // perform the search using the searchQuery variable
-    performSearch(searchQuery);
-  }
+  // const form = document.querySelector('#search-form');
+  // form.addEventListener('submit', (event) => {
+  //   // prevent the default form submission behavior
+  //   event.preventDefault();
   
-  const form = document.querySelector('#search-form');
-  form.addEventListener('submit', (event) => {
-    // prevent the default form submission behavior
-    event.preventDefault();
-  
-    // call the performSearch function
-    performSearch();
-  });
-  const searchTerm = document.querySelector('#search-input').value;
-  function performSearch(searchTerm) {
-    const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${searchTerm}`;
-    fetch('/some/url')
-  .then(response => {
-    const clonedResponse = response.clone();
-    return clonedResponse.json();
-  })
-  .then(json => {
-    // Do something with the JSON data here
-  })
-  .catch(error => {
-    // Handle the error here
-  });
+  //   // call the performSearch function
+  //   performSearch();
+  // });
+  // const searchTerm = document.querySelector('#search-input').value;
+  // function performSearch(searchTerm) {
+  //   const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${searchTerm}`;
+  //   fetch('/some/url')
+  // .then(response => {
+  //   const clonedResponse = response.clone();
+  //   return clonedResponse.json();
+  // })
+  // .then(json => {
+  //   // Do something with the JSON data here
+  // })
+  // .catch(error => {
+  //   // Handle the error here
+  // });
 
   
-  }
+  // }
   
 
 document.getElementById("open-form-btn").onclick = function() {
@@ -153,4 +154,3 @@ document.getElementById("open-form-btn").onclick = function() {
   }
   
 })
- 
