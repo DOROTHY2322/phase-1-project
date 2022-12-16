@@ -1,10 +1,10 @@
 body{
-    background-color: #AB9FAB;
-    font-family: 'MonteCarlo', cursive;
+    background-image:url('https://raw.githubusercontent.com/DOROTHY2322/phase-1-project/main/gradient1.png');
+    font-family: 'Times New Roman', Times, serif
 }
 
 .navbar{
-    background-color: #d2cfd0;
+
     text-align: left;
     color: white;
     font-family: 'MonteCarlo', cursive;
@@ -14,58 +14,63 @@ body{
 
 h1 {
  font-family:'Times New Roman', Times, serif;
-color: #050302;
+color: white;
 text-align: center;
 }
 h2{
+
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    color: black;
+    color: white;
 }
 h3{
     text-align: center;
     color: black;
 }
-h4{
-   font-family: 'Times New Roman', Times, serif;
-    padding: 1px;
-    text-align:right;
-    color: #050302;
+
+.container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 90vw;
+  max-width: 37.5em;
+  background-color: #ffffff;
+  padding: 1.8em;
+  border-radius: 0.6em;
+  box-shadow: 0 1em 3em rgba(2, 9, 38, 0.25);
 }
-.container{
-    text-align: left;
-    background-color: #eeeefe;
-    height: 100%;
-    width: 300px;
-    position: fixed;
-    top: 120;
-    left: 0;
-    padding-top: 60px;
-    float: left;
-    margin-left: 18px;
-    z-index: 5;
+.search-container {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1em;
+  margin-bottom: 1.2em;
 }
-.search{
-    text-align: center;
-    color:#ffffff ;
+.search-container input {
+  font-size: 1em;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+  color: black;
+  border-bottom: 1.5px solid #1f194c;
 }
-label{
-    color: black;
+.search-container input:focus {
+  border-color: #5372f0;
 }
-#btn{
-    float: left;
-    margin-top: 10px;
-    margin-left: 100px;
-    background-color: blue;
-}
-.checkbox{
-    margin-left: 10px;
+.search-container button {
+  font-size: 1em;
+  border-radius: 2em;
+  background-color: #5372f0;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  cursor: pointer;
 }
 .card{
     color: #ffffff;
     margin-left: 320px;
 }
-/* #signup-form {
+#signup-form {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -73,30 +78,35 @@ label{
     background-color: lightgray;
     padding: 20px;
     border-radius: 5px;
-  } */
+  } 
 
-  #drinks img{
+  /* #drinks img{
     width: 50%;
     height: auto;
-    margin-left: 1000px;
+    margin-left: 100px;
     max-height: 500px;
     max-width: 400px;
     margin-top: 30px;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-right: auto;
     display: block;
+   
 
-  }
+  } */
    #drinks card{
+    display: block;
     font-size: large;
-    text-align: right;
+    text-align:justify;
     font-family: 'Times New Roman', Times, serif;
-    color: #050302;
+    color: white;
+    
     
   }
-  #drinks list-item{
+  #drinks ons-list-item{
+    margin-top: 10px;
+    display: block;
     font-size: medium;
-    text-align: right;
+    text-align: justify;
     font-family: 'Times New Roman', Times, serif;
-    color: #050302;
+    color: white;
   }

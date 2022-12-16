@@ -49,7 +49,7 @@ function displayRandomCocktail(cocktail){
         break;
        }
 
-       let ingredient = document.createElement('list-item');
+       let ingredient = document.createElement('ons-list-item');
        ingredient.innerHTML = cocktail.drinks[0] [`strMeasure${i}`]+ ':' +[`strIngredient${i}`] +
        drinks.appendChild(ingredient);
 
