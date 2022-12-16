@@ -108,10 +108,30 @@ function performSearch(searchQuery) {
     performSearch(searchQuery);
   }
   
+  const form = document.querySelector('#search-form');
+  form.addEventListener('submit', (event) => {
+    // prevent the default form submission behavior
+    event.preventDefault();
+  
+    // call the performSearch function
+    performSearch();
+  });
+  const searchTerm = document.querySelector('#search-input').value;
+  function performSearch(searchTerm) {
+    const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${searchTerm}`;
+    fetch('/some/url')
+    .then(response => {
+      const clonedResponse = response.clone();
+      // Do something with the response body here
+      return response.json();
+    })
+    .then(json => {
+      // Do something with the JSON data here
+    });
 
 
-
-
+  }
+  
 
 document.getElementById("open-form-btn").onclick = function() {
     document.getElementById("signup-form").style.display = "block";

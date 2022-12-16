@@ -37,7 +37,7 @@
 - Take on the process in Alternative One above.
 - Repeat the steps in alternative one.
 
-Hosting on Github
+# Hosting on Github
  - After creting the project in which we have done so.
 
 
