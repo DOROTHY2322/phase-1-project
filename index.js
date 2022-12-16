@@ -40,12 +40,19 @@ document.getElementById("alcoholic-filter").addEventListener("change", function(
     // code to display the cocktails on the page goes here
   }
   
-     
-      
+  
+  
       // check the appropriate checkbox based on the isAlcoholic property of the drink object
-      if (drinks.isAlcoholic) {
-        document.getElementById("alcoholic-filter").checked = false;
-      } else {
+      if (drinks.isAlcoholic) 
+      {
+        document.getElementById("alcoholic-filter").checked = true;
+
+        document.getElementById("non-alcoholic-filter").checked = true;
+      } 
+      else 
+      {
+        document.getElementById("alcoholic-filter").checked = true;
+
         document.getElementById("non-alcoholic-filter").checked = false;
       }
       
@@ -120,16 +127,18 @@ function performSearch(searchQuery) {
   function performSearch(searchTerm) {
     const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${searchTerm}`;
     fetch('/some/url')
-    .then(response => {
-      const clonedResponse = response.clone();
-      // Do something with the response body here
-      return response.json();
-    })
-    .then(json => {
-      // Do something with the JSON data here
-    });
+  .then(response => {
+    const clonedResponse = response.clone();
+    return clonedResponse.json();
+  })
+  .then(json => {
+    // Do something with the JSON data here
+  })
+  .catch(error => {
+    // Handle the error here
+  });
 
-
+  
   }
   
 
