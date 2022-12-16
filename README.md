@@ -52,7 +52,7 @@
 
     - To acces the live page:
 
-            - http://phase-1-project.vercel.app/  
+        - https://phase-1-project.vercel.app/ 
 
 # Authors
 
