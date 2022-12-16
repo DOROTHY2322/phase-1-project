@@ -21,10 +21,13 @@
     </div>
 
    <div class="filter">
-    <label for="alcoholic-filter">Alcoholic</label>
-    <input type="checkbox" id="alcoholic-filter" name="alcoholic-filter">
-    <input type="checkbox" id="alcoholic-filter" checked>
-
+    <label>
+      <input type="checkbox" id="alcoholic-filter" checked> Alcoholic
+    </label>
+    <label>
+      <input type="checkbox" id="non-alcoholic-filter" checked> Non-alcoholic
+    </label>
+    
    </div>
    
        
@@ -32,20 +35,23 @@
     <div class="card">
       <form id="search-form">
         <label for="search-query">Search for a cocktail:</label><br>
-        <input type="text" id="margarita"><br>
+        <input type="text" id="search-query"><br>
         <button type="submit">Search</button>
       </form>
        
     </div>
     <div id="signup-form">
-  <form>
-    <label for="name">Name:</label><br>
-    <input type="text" id="name"><br>
-    <label for="email">Email:</label><br>
-    <input type="text" id="email"><br><br>
-    <input type="submit" value="Sign Up">
-  </form>
-</div>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+      </form> 
+    </div>
+    
+    <button id="open-form-btn">Open Sign-Up Form</button>
+    
 
   <script type="text/javascript" src="./index.js"></script>
 

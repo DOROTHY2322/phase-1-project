@@ -44,7 +44,7 @@ document.getElementById("alcoholic-filter").addEventListener("change", function(
       
       // check the appropriate checkbox based on the isAlcoholic property of the drink object
       if (drinks.isAlcoholic) {
-        document.getElementById("alcoholic-filter").checked = true;
+        document.getElementById("alcoholic-filter").checked = false;
       } else {
         document.getElementById("non-alcoholic-filter").checked = false;
       }
@@ -107,10 +107,10 @@ searchForm.addEventListener("submit", function(event) {
   
     // make a request to the API using the search query
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${searchQuery}`)
-      .then((response) => response.json())
+    .then((response)=>response.json())
       .then((data) => {
         // display the search results on the page
-        displaySearchResults(data);
+        displayCocktails(data);
       });
   });
   
@@ -139,19 +139,15 @@ function displaySearchResults(results) {
 
 
 
-  // code to display the search results on the page goes here
-
-const form = document.getElementById('signup-form');
-
-form.addEventListener('submit', (event) => {
-  event.preventDefault(); // Prevent the form from being submitted
-
-  const name = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-// validate the form fields
-if (email === "") {
-  alert("Please enter your email address")
-}
-});
+document.getElementById("open-form-btn").onclick = function() {
+    document.getElementById("signup-form").style.display = "block";
+  }
+  
+  document.getElementById("signup-form").onclick = function(event) {
+    if (event.target == this) {
+      this.style.display = "none";
+    }
+  }
+  
 })
  
