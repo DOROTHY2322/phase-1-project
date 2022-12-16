@@ -86,22 +86,65 @@ function displayRandomCocktail(cocktail){
     drinks.appendChild(card);
  
 }
+// get the search form element
+const searchForm = document.getElementById("search-form");
 
+// add an event listener to the form that listens for the "submit" event
 
-// hide the sign-up form by default
-
-document.getElementById("signup-form").style.display = "none";
-
- // show the sign-up form when the user clicks on the "Sign Up" button
-
- document.getElementById("signup-button").addEventListener("click", function() {
+searchForm.addEventListener("submit", function(event) {
+    // prevent the form from submitting
+    event.preventDefault();
   
-   document.getElementById("signup-form").style.display = "block";
- });
+    // get the value of the search query from the input field
+    const searchQuery = document.getElementById("search-query").value;
+  
+    // make a request to the API using the search query
+    fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${searchQuery}`)
+      .then((response) => response.json())
+      .then((data) => {
+        // display the search results on the page
+        displaySearchResults(data);
+      });
+  });
+  
 
-// // hide the sign-up form when the user clicks on the "Close" button
- document.getElementById("close-button").addEventListener("click", function() {
- document.getElementById("signup-form").style.display = "none";
+function displaySearchResults(results) {
+    const searchResultsElement = document.getElementById('search-results');
+
+  // clear the search results element
+  searchResultsElement.innerHTML = '';
+
+  // loop through the results and create an element for each result
+  results.forEach((result) => {
+    const resultElement = document.createElement('div');
+    resultElement.innerHTML = `
+      <h2>${result.strDrink}</h2>
+      <p>${result.strCategory}</p>
+      <img src="${result.strDrinkThumb}" alt="${result.strDrink}">
+    `;
+
+    // append the result element to the search results element
+    searchResultsElement.appendChild(resultElement);
+  });
+}
+
+
+
+
+
+  // code to display the search results on the page goes here
+
+const form = document.getElementById('signup-form');
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault(); // Prevent the form from being submitted
+
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+// validate the form fields
+if (email === "") {
+  alert("Please enter your email address")
+}
 });
 })
  
