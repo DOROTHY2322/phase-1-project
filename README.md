@@ -1,5 +1,10 @@
 # phase-1-project
 # Description
+ - This project includes creating a cocktail app from an already existing Api and its a cocktaildb.
+ - As user one can view the cocktails by name, indicate if its alcoholic or non alcoholic, it shows the ingredients of a particular drink and their respective measures as well as the instructions of a particular cocktail.
+
+        -   https://www.thecocktaildb.com/api.php?ref=apilist.fun
+
 # Getting started
 
 - To make use of the content in this repo the essential include ;
@@ -31,3 +36,29 @@
 - Click on that button to fork the repo to your own account.
 - Take on the process in Alternative One above.
 - Repeat the steps in alternative one.
+
+Hosting on Github
+ - After creting the project in which we have done so.
+
+
+ - we are using an application called vercel to deploy our page.
+
+
+ - in the vercel application on your right choose 
+
+  -  Add New Project
+
+  - choose the repository you wish to deploy
+
+    - To acces the live page:
+
+            - http://phase-1-project.vercel.app/  
+
+# Authors
+
+- This project was contributed to by:
+
+DOROTHY JEBET
+
+# License
+ - MIT LICENSE Copyright (c) 2022 DOROTHY2322
