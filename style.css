@@ -71,16 +71,18 @@ h3{
     margin-left: 320px;
 }
 #signup-form {
-    position: fixed;
+ text-align: left;
+    position: absolute;
     top: 50%;
     left: 50%;
+    margin-bottom:10px ;
     transform: translate(-50%, -50%);
     background-color: lightgray;
     padding: 20px;
     border-radius: 5px;
   } 
 
-  /* #drinks img{
+   #drinks img{
     width: 50%;
     height: auto;
     margin-left: 100px;
@@ -92,7 +94,7 @@ h3{
     display: block;
    
 
-  } */
+  } 
    #drinks card{
     display: block;
     font-size: large;
@@ -109,4 +111,7 @@ h3{
     text-align: justify;
     font-family: 'Times New Roman', Times, serif;
     color: white;
+  }
+  .filter{
+    color: #ffffff;
   }

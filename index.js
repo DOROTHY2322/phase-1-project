@@ -14,7 +14,34 @@ const Type='https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcohol
 const search = 'https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Gin'
 
 document.addEventListener('DOMContentLoaded', () => {
-   
+
+    document.getElementById("alcoholic-filter").addEventListener("change", function(event) {
+        // check if the checkbox is checked
+        if (event.target.checked) {
+          // make a request to the API to get a list of alcoholic cocktails
+          fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic')
+            .then((response) => response.json())
+            .then((data) => {
+              // display the cocktails on the page
+              displayCocktails(data);
+            });
+        } else {
+          // make a request to the API to get a list of non-alcoholic cocktails
+          fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic')
+            .then((response) => response.json())
+            .then((data) => {
+              // display the cocktails on the page
+              displayCocktails(data);
+            });
+        }
+      });
+      
+      function displayCocktails(cocktails) {
+        // code to display the cocktails on the page goes here
+      }
+      document.getElementById("alcoholic-filter").checked = true;
+
+      
 
     //to get random cocktails
     function getRandomCocktail(){
