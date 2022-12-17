@@ -94,7 +94,7 @@ function displayRandomCocktail(cocktail){
         break;
        }
   // Create an "list-item" element and set its inner HTML to a string containing the corresponding "strMeasure" property and the non-null "strIngredient" property
-       let ingredient = document.createElement('list-item');
+       let ingredient = document.createElement('list');
        ingredient.innerHTML = cocktail.drinks[0] [`strMeasure${i}`] + ':' + cocktail.drinks[0] [`strIngredient${i}`]
        // Adding the "list-item" element to the page
        drinks.appendChild(ingredient);
