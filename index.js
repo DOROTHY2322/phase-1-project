@@ -93,15 +93,15 @@ function displayRandomCocktail(cocktail){
      if(cocktail.drinks[0][`strIngredient${i}`]== null){
         break;
        }
-  // Create an "list-item" element and set its inner HTML to a string containing the corresponding "strMeasure" property and the non-null "strIngredient" property
-       let ingredient = document.createElement('list');
+  // Create an "list" element and set its inner HTML to a string containing the corresponding "strMeasure" property and the non-null "strIngredient" property
+       let ingredient = document.createElement('p');
        ingredient.innerHTML = cocktail.drinks[0] [`strMeasure${i}`] + ':' + cocktail.drinks[0] [`strIngredient${i}`]
-       // Adding the "list-item" element to the page
+       // Adding the "list" element to the page
        drinks.appendChild(ingredient);
 
     }
      // Creating a "p" element and setting its inner HTML to the instructions for the cocktail
-    let card = document.createElement('p')
+    let card = document.createElement('item')
     card.innerHTML = cocktail.drinks[0].strInstructions;
     // Adding the "p" element 
     drinks.appendChild(card);
