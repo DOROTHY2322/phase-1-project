@@ -69,42 +69,49 @@ document.getElementById("alcoholic-filter").addEventListener("change", function(
     getRandomCocktail();
 
 function displayRandomCocktail(cocktail){
+  // adding the element with the ID "drinks"
     console.log(cocktail.drinks[0])
     
     let drinks = document.querySelector('#drinks')
 
+// Creating an h2 element and set its inner HTML to the name of the cocktail
+
     let drinkName = document.createElement('h2')
     drinkName.innerHTML=cocktail.drinks[0].strDrink
-
+ // Adding the h2 element 
     drinks.appendChild(drinkName);
 
+ // Creating an img element and set its "src" attribute to the URL of the thumbnail image of the cocktail
     let img =document.createElement('img');
     img.src = cocktail.drinks[0].strDrinkThumb;
-
+ // Adding the img element 
     drinks.appendChild(img);
-     
+      // Looping through the properties "strIngredient1" through "strIngredient15" of the first element of the "drinks" array in the "cocktail" object
     for (let i=1; i<16; i++){
        console.log();
        
      if(cocktail.drinks[0][`strIngredient${i}`]== null){
         break;
        }
-
+  // Create an "list-item" element and set its inner HTML to a string containing the corresponding "strMeasure" property and the non-null "strIngredient" property
        let ingredient = document.createElement('list-item');
        ingredient.innerHTML = cocktail.drinks[0] [`strMeasure${i}`] + ':' + cocktail.drinks[0] [`strIngredient${i}`]
+       // Adding the "list-item" element to the page
        drinks.appendChild(ingredient);
 
     }
+     // Creating a "p" element and setting its inner HTML to the instructions for the cocktail
     let card = document.createElement('p')
     card.innerHTML = cocktail.drinks[0].strInstructions;
+    // Adding the "p" element 
     drinks.appendChild(card);
  
 }
-
+//enabling the search
   let search = document.getElementById("submit");
   let url = "https://thecocktaildb.com/api/json/v1/1/search.php?s=";
 
-  
+  //event listeners
 document.getElementById("open-form-btn").onclick = function() {
     document.getElementById("signup-form").style.display = "block";
   }
