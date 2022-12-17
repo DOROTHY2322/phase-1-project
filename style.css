@@ -62,12 +62,14 @@ button[type=submit] {
 }
 
 button[type=submit]:hover {
-  background-color: #45a049;
+  background-color: black;
 
 }
 
 #button{
-  margin: bottom 100px;;
+ 
+  margin: bottom 100px;
+  
 
 }
 #signup-form {
@@ -114,7 +116,7 @@ button[type=submit]:hover {
     
     
   }
-  #drinks ons-list-item{
+  #drinks list-item{
     margin-top: 10px;
     display: block;
     font-size: medium;
