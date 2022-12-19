@@ -61,7 +61,12 @@
 
     - To acces the live page:
 
-        - https://phase-1-project.vercel.app/ 
+        - https://phase-1-project.vercel.app/
+        
+ # Technologies used   
+  - HTML
+  - JavaScript
+  - CSS    
 
 # Authors
 
